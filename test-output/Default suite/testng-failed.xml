@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Tests.AddNewInvoicesTests">
+        <methods>
+          <include name="logoutButton"/>
+          <include name="setUp"/>
+          <include name="emptyInvoice"/>
+          <include name="backButton"/>
+          <include name="withoutTitle"/>
+          <include name="cancelButton"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.AddNewInvoicesTests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test thread-count="5" name="Testing(failed)">
+    <classes>
+      <class name="Tests.AddNewInvoicesTests">
+        <methods>
+          <include name="logoutButton"/>
+          <include name="setUp"/>
+          <include name="backButton"/>
+          <include name="cancelButton"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.AddNewInvoicesTests -->
+    </classes>
+  </test> <!-- Testing(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
