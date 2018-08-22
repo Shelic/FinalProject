@@ -12,13 +12,13 @@ public class InvoicesPage extends PageObject {
 
 	Actions builder = new Actions(driver);
 
-	@FindBy(css = "#app > div.application--wrap > main > div > div > div:nth-child(1) > div > div.v-card__title.v-card__title--primary > h4")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[22]/main/div/div/div[1]/div/div[1]/h4")
 	WebElement invoicesListText;
 
-	@FindBy(css = "#app > div.application--wrap > main > div > div > div:nth-child(1) > div > div.flex.ml-5.pl-2 > div > div > div.flex.mr-2.ml-4.sm2 > div > div > div.v-input__slot > div > div > div > label")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[22]/main/div/div/div[1]/div/div[2]/div/div/div[1]/div/div/div[1]/div/div/div/div[1]")
 	WebElement clientList;
 
-	@FindBy(css = "#app > div.v-menu__content.menuable__content__active > div > div > div:nth-child(2) > a > div")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[19]/div/div/div[2]/a")
 	WebElement tamaraJovanovic;
 
 	@FindBy(id = "filter-from")
@@ -66,25 +66,25 @@ public class InvoicesPage extends PageObject {
 	@FindBy(xpath = "//*[@id=\"inv-status-btn-2018-MKO1\"]/div/i[1]")
 	WebElement changeStatusButton;
 
-	@FindBy(css = "#app > div.application--wrap > main > div > div > div:nth-child(2) > div > div:nth-child(4) > div > div:nth-child(5) > div > div:nth-child(2) > div > div > div.v-input__slot > div > div > div > div.v-input__append-inner > div > i")
+	@FindBy(xpath = "//*[@id=\"inv-status-btn-2018-XDR2\"]/div")
 	WebElement changeStatusDropDown;
 
-	@FindBy(css = "#app > div.v-menu__content.menuable__content__active > div > div > div:nth-child(2) > a > div > div")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[16]/div/div/div[2]/a/div")
 	WebElement sent;
 
-	@FindBy(css = "#inv-status-dialog-yes-2018-MKO1 > div")
+	@FindBy(id = "inv-status-dialog-yes-2018-XDR2")
 	WebElement sentYes;
 
 	@FindBy(id = "inv-status-dialog-no-2018-MKO1")
 	WebElement sentNo;
 
-	@FindBy(css = "#context-402 > div > i")
+	@FindBy(id = "context-402")
 	WebElement optionsButton;
 
-	@FindBy(css = "#context-edit-402 > div")
+	@FindBy(id = "context-edit-402")
 	WebElement editButton;
 
-	@FindBy(css = "#context-preview-402 > div")
+	@FindBy(id = "context-preview-402")
 	WebElement previewButton;
 
 	@FindBy(xpath = "//*[@id=\"app\"]/div[8]/div/div/nav/div/a/div/i")
@@ -105,7 +105,7 @@ public class InvoicesPage extends PageObject {
 	@FindBy(css = "#inv-status-2018-XDR2")
 	WebElement sentText;
 
-	@FindBy(css = "#app > div.v-dialog__content.v-dialog__content--active > div > div > nav > div > a > div > i")
+	@FindBy(xpath = "//*[@id=\"app\"]/div[8]/div/div/nav/div/a/div")
 	WebElement previewXButton;
 
 	public InvoicesPage(WebDriver driver) {
